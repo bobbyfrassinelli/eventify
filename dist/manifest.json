@@ -1,0 +1,7 @@
+{
+    "manifest_version": 3,
+    "name": "eventify",
+    "version": "1.0",
+    "description": "turn text into Google Calendar events",
+    "action": { "default_popup": "index.html" }
+}
