@@ -1,42 +1,63 @@
+/* Keep the popup reasonably narrow and tidy */
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  width: 360px;
+  padding: 12px;
+  box-sizing: border-box;
+  background-color: #f3f4f6;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.app {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 14px;
+  color: #111827;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.app-header {
+  margin-bottom: 4px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.app-title {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
 }
 
-.card {
-  padding: 2em;
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
 }
 
-.read-the-docs {
-  color: #888;
+.field-label {
+  font-size: 13px;
 }
+
+.field-textarea {
+  min-height: 80px;
+  padding: 6px 8px;
+  font-size: 14px;
+  border-radius: 4px;
+  border: 1px solid #d1d5db;
+  resize: vertical;
+}
+
+.actions {
+  margin-top: 8px;
+}
+
+.primary-button {
+  padding: 6px 12px;
+  font-size: 14px;
+  border-radius: 4px;
+  border: none;
+  background-color: #3b82f6;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.primary-button:hover {
+  background-color: #2563eb;
+}
+
