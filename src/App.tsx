@@ -28,7 +28,7 @@ function App() {
           className="field-textarea"
           value={input}
           onChange={handleChange}
-          placeholder="Describe what you want to schedule"
+          placeholder="Whatchu want"
         />
       </div>
 
